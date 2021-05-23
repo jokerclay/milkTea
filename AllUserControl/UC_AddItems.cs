@@ -36,5 +36,10 @@ namespace milkTea.AllUserControl
 
         }
 
+        // 当离开 AddItems 时，清空用户输入
+        private void UC_AddItems_Leave(object sender, EventArgs e)
+        {
+            clearAll();
+        }
     }
 }

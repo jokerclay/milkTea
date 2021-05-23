@@ -195,6 +195,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "UC_AddItems";
             this.Size = new System.Drawing.Size(781, 514);
+            this.Leave += new System.EventHandler(this.UC_AddItems_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 

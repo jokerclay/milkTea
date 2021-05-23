@@ -56,6 +56,18 @@ namespace milkTea
         private void DashBoard_Load(object sender, EventArgs e)
         {
             uC_AddItems1.Visible = false;
+            uC_PlaceOrder1.Visible = false;
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            uC_Welcome1.SendToBack();
+            // 切换标签动效
+            guna2Transition1.ShowSync(uC_PlaceOrder1);
+
+            uC_PlaceOrder1.Visible = true;
+            uC_PlaceOrder1.BringToFront();
+
         }
     }
 }

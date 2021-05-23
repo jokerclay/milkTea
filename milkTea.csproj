@@ -58,6 +58,12 @@
     <Compile Include="AllUserControl\UC_AddItems.Designer.cs">
       <DependentUpon>UC_AddItems.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControl\UC_PlaceOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_PlaceOrder.Designer.cs">
+      <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AllUserControl\UC_AddItems.resx">
       <DependentUpon>UC_AddItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_PlaceOrder.resx">
+      <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>
