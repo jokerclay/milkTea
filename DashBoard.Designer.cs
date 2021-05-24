@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.LinkLabel();
@@ -41,17 +41,17 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_RemoveItem = new milkTea.AllUserControl.UC_RemoveItem();
+            this.uC_UpdataItems = new milkTea.AllUserControl.UC_UpdataItems();
+            this.uC_PlaceOrder1 = new milkTea.AllUserControl.UC_PlaceOrder();
+            this.uC_AddItems1 = new milkTea.AllUserControl.UC_AddItems();
+            this.uC_Welcome1 = new milkTea.AllUserControl.UC_Welcome();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_PlaceOrder1 = new milkTea.AllUserControl.UC_PlaceOrder();
-            this.uC_AddItems1 = new milkTea.AllUserControl.UC_AddItems();
-            this.uC_Welcome1 = new milkTea.AllUserControl.UC_Welcome();
-            this.uC_UpdataItems = new milkTea.AllUserControl.UC_UpdataItems();
             this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_RemoveItem = new milkTea.AllUserControl.UC_RemoveItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -215,46 +215,24 @@
             this.panel2.Size = new System.Drawing.Size(781, 514);
             this.panel2.TabIndex = 1;
             // 
-            // guna2Elipse3
+            // uC_RemoveItem
             // 
-            this.guna2Elipse3.BorderRadius = 30;
-            this.guna2Elipse3.TargetControl = this.panel2;
+            this.uC_RemoveItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.guna2Transition1.SetDecoration(this.uC_RemoveItem, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_RemoveItem.Location = new System.Drawing.Point(-81, -3);
+            this.uC_RemoveItem.Name = "uC_RemoveItem";
+            this.uC_RemoveItem.Size = new System.Drawing.Size(862, 508);
+            this.uC_RemoveItem.TabIndex = 4;
             // 
-            // guna2Elipse4
+            // uC_UpdataItems
             // 
-            this.guna2Elipse4.BorderRadius = 30;
-            this.guna2Elipse4.TargetControl = this.panel2;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 30;
-            this.guna2Elipse5.TargetControl = this.panel2;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.BorderRadius = 30;
-            this.guna2Elipse6.TargetControl = this.panel2;
+            this.uC_UpdataItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.guna2Transition1.SetDecoration(this.uC_UpdataItems, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_UpdataItems.ForeColor = System.Drawing.Color.Black;
+            this.uC_UpdataItems.Location = new System.Drawing.Point(-37, -3);
+            this.uC_UpdataItems.Name = "uC_UpdataItems";
+            this.uC_UpdataItems.Size = new System.Drawing.Size(815, 514);
+            this.uC_UpdataItems.TabIndex = 3;
             // 
             // uC_PlaceOrder1
             // 
@@ -285,29 +263,51 @@
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 511);
             this.uC_Welcome1.TabIndex = 0;
             // 
-            // uC_UpdataItems
+            // guna2Elipse3
             // 
-            this.uC_UpdataItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
-            this.guna2Transition1.SetDecoration(this.uC_UpdataItems, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_UpdataItems.ForeColor = System.Drawing.Color.Black;
-            this.uC_UpdataItems.Location = new System.Drawing.Point(-37, -3);
-            this.uC_UpdataItems.Name = "uC_UpdataItems";
-            this.uC_UpdataItems.Size = new System.Drawing.Size(815, 514);
-            this.uC_UpdataItems.TabIndex = 3;
+            this.guna2Elipse3.BorderRadius = 30;
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this.panel2;
             // 
             // guna2Elipse7
             // 
             this.guna2Elipse7.BorderRadius = 30;
             this.guna2Elipse7.TargetControl = this.panel2;
-            // 
-            // uC_RemoveItem
-            // 
-            this.uC_RemoveItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
-            this.guna2Transition1.SetDecoration(this.uC_RemoveItem, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_RemoveItem.Location = new System.Drawing.Point(3, 3);
-            this.uC_RemoveItem.Name = "uC_RemoveItem";
-            this.uC_RemoveItem.Size = new System.Drawing.Size(781, 514);
-            this.uC_RemoveItem.TabIndex = 4;
             // 
             // DashBoard
             // 

@@ -61,5 +61,10 @@ namespace milkTea.AllUserControl
             txtCategory.Clear();
             txtPrice.Clear();
         }
+
+        private void UC_UpdataItems_Enter(object sender, EventArgs e)
+        {
+            loadData();
+        }
     }
 }
