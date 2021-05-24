@@ -64,6 +64,18 @@
     <Compile Include="AllUserControl\UC_PlaceOrder.Designer.cs">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllUserControl\UC_RemoveItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_RemoveItem.Designer.cs">
+      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControl\UC_UpdataItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControl\UC_UpdataItems.Designer.cs">
+      <DependentUpon>UC_UpdataItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllUserControl\UC_Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -76,6 +88,7 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +103,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_PlaceOrder.resx">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_RemoveItem.resx">
+      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControl\UC_UpdataItems.resx">
+      <DependentUpon>UC_UpdataItems.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControl\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>

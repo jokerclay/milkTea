@@ -45,9 +45,13 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_PlaceOrder1 = new milkTea.AllUserControl.UC_PlaceOrder();
             this.uC_AddItems1 = new milkTea.AllUserControl.UC_AddItems();
             this.uC_Welcome1 = new milkTea.AllUserControl.UC_Welcome();
+            this.uC_UpdataItems = new milkTea.AllUserControl.UC_UpdataItems();
+            this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_RemoveItem = new milkTea.AllUserControl.UC_RemoveItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +104,7 @@
             this.btnRemove.Size = new System.Drawing.Size(180, 45);
             this.btnRemove.TabIndex = 4;
             this.btnRemove.Text = "移 除 饮 品";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnUpdate
             // 
@@ -121,6 +126,7 @@
             this.btnUpdate.Size = new System.Drawing.Size(180, 45);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "更 新 饮 品";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -197,6 +203,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_RemoveItem);
+            this.panel2.Controls.Add(this.uC_UpdataItems);
             this.panel2.Controls.Add(this.uC_PlaceOrder1);
             this.panel2.Controls.Add(this.uC_AddItems1);
             this.panel2.Controls.Add(this.uC_Welcome1);
@@ -243,6 +251,11 @@
             animation2.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation2;
             // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this.panel2;
+            // 
             // uC_PlaceOrder1
             // 
             this.uC_PlaceOrder1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
@@ -250,7 +263,7 @@
             this.uC_PlaceOrder1.ForeColor = System.Drawing.Color.Black;
             this.uC_PlaceOrder1.Location = new System.Drawing.Point(-33, -3);
             this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
-            this.uC_PlaceOrder1.Size = new System.Drawing.Size(795, 514);
+            this.uC_PlaceOrder1.Size = new System.Drawing.Size(814, 514);
             this.uC_PlaceOrder1.TabIndex = 2;
             // 
             // uC_AddItems1
@@ -271,6 +284,30 @@
             this.uC_Welcome1.Name = "uC_Welcome1";
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 511);
             this.uC_Welcome1.TabIndex = 0;
+            // 
+            // uC_UpdataItems
+            // 
+            this.uC_UpdataItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.guna2Transition1.SetDecoration(this.uC_UpdataItems, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_UpdataItems.ForeColor = System.Drawing.Color.Black;
+            this.uC_UpdataItems.Location = new System.Drawing.Point(-37, -3);
+            this.uC_UpdataItems.Name = "uC_UpdataItems";
+            this.uC_UpdataItems.Size = new System.Drawing.Size(815, 514);
+            this.uC_UpdataItems.TabIndex = 3;
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 30;
+            this.guna2Elipse7.TargetControl = this.panel2;
+            // 
+            // uC_RemoveItem
+            // 
+            this.uC_RemoveItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(255)))));
+            this.guna2Transition1.SetDecoration(this.uC_RemoveItem, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_RemoveItem.Location = new System.Drawing.Point(3, 3);
+            this.uC_RemoveItem.Name = "uC_RemoveItem";
+            this.uC_RemoveItem.Size = new System.Drawing.Size(781, 514);
+            this.uC_RemoveItem.TabIndex = 4;
             // 
             // DashBoard
             // 
@@ -312,5 +349,9 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private AllUserControl.UC_PlaceOrder uC_PlaceOrder1;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private AllUserControl.UC_UpdataItems uC_UpdataItems;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
+        private AllUserControl.UC_RemoveItem uC_RemoveItem;
     }
 }

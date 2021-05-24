@@ -57,6 +57,8 @@ namespace milkTea
         {
             uC_AddItems1.Visible = false;
             uC_PlaceOrder1.Visible = false;
+            uC_UpdataItems.Visible = false;
+            uC_RemoveItem.Visible = false;
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
@@ -67,6 +69,19 @@ namespace milkTea
 
             uC_PlaceOrder1.Visible = true;
             uC_PlaceOrder1.BringToFront();
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            uC_UpdataItems.Visible = true;
+            uC_UpdataItems.BringToFront();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            uC_RemoveItem.Visible = true;
+            uC_RemoveItem.BringToFront();
 
         }
     }
